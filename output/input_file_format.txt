@@ -1,0 +1,1 @@
+tlm_id,facility_mnemonic,source_EMR,msg_type^msg_event,msg_type,emr_facility_mnemonic_msg_type_msh.10,msg.10,msh.7,target_system_source_EMR_if_from_source,activity_datetime,receive_datetime
