@@ -6,6 +6,7 @@ def create_bucket(bucket_name, bucket_location):
      * bucket name
      * bucket location
     with default storage class
+    
     """
 
     storage_client = storage.Client()
