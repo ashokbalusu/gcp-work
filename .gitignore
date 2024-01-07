@@ -2,7 +2,6 @@
 **/.terraform/*
 
 *.csv
-output/*
 General/*
 
 # .tfstate files
