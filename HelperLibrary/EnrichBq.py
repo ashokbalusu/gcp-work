@@ -47,10 +47,10 @@ class EnrichBq:
         self.project_id = config['gcp']['project_id']
         self.table_id = self.project_id + ".MCID_comparison.tlmmcid"
 
-        self.dbServer = self.TLM_DB_Server # os.environ.get("TLM_DB_Server") # 
-        self.db = self.TLM_DB # os.environ.get("TLM_DB") # 
-        self.username = self.TLM_user # os.environ.get("TLM_User") # 
-        self.password = self.TLM_dev_pass # os.environ.get("TLM_dev_pass") # 
+        self.dbServer = self.TLM_DB_Server # os.environ.get("TLM_DB_Server") # ${{ secrets.TLM_DB_Server }
+        self.db = self.TLM_DB # os.environ.get("TLM_DB") # ${{ secrets.TLM_DB }
+        self.username = self.TLM_user # os.environ.get("TLM_User") # ${{ secrets.TLM_User }
+        self.password = self.TLM_dev_pass # os.environ.get("TLM_dev_pass") # ${{ secrets.TLM_dev_pass }
         self.initDbConn = 'DRIVER={ODBC Driver 18 for SQL Server};SERVER='+self.dbServer+';DATABASE='+self.db+';UID='+self.username+';PWD='+self.password+';TrustServerCertificate=yes;'
 
     def load_bq_from_csv(self):
