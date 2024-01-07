@@ -1,5 +1,6 @@
 # Create new storage bucket in the US multi-region
 # with standard storage
+# test
 
 resource "google_storage_bucket" "static" {
  name          = ${var.BUCKET_NAME}
