@@ -44,7 +44,7 @@ class EnrichBq:
         self.TLM_dev_pass = config['mssqlDB']['pass']
         self.TLM_DB = config['mssqlDB']['db']
     
-        self.project_id = config['mssqlDB']['project_id']
+        self.project_id = config['gcp']['project_id']
         self.table_id = self.project_id + ".MCID_comparison.tlmmcid"
 
         self.dbServer = self.TLM_DB_Server # os.environ.get("TLM_DB_Server") # 
